@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 data-testid="slackDisplayName">Keme</h1>
+        </header>
+
+        <main>
+            <!-- profile section -->
+            <section class="my-profile">
+                <img data-testid="slackprofilepicture" src="./image/profile-picture.jpeg" alt="slack profile picture">
+                <p data-testid="slackEmail">osikemelite42@gmail.com</p>
+            </section>
+            <!-- end of profile section -->
+
+
+            <!-- goals section -->
+            <section class="my-goals">
+                <h2>My Tech Goals for the Next 2 years</h2>
+                <ul>
+                    <li>To become a world class software developer</li>
+                    <li>To become a world class software developer</li>
+                    <li>To become a world class software developer</li>
+                </ul>
+            </section>
+            <!-- end of goals section -->
+
+
+            <!-- current time and day section -->
+            <section class="datetime">
+                <p><strong>Current Time in UTC:</strong><span data-testid="currentTimeUTC" id="currentTimeUTC">--:--:--</span></p>
+                <p><strong>Current Day of the Week:</strong> <span data-testid="currentDay" id="currentDay">---</span></p>
+
+            </section>
+            <!-- end of current time and day section -->
+
+
+            <!-- footer section -->
+            <footer>
+                <p>Useful Links:</p>
+                <ul>
+                    <li><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a></li>
+                    <li><a href="https://keyword.dog" target="_blank" data-testid="keywordLink" >Keyword Dog</a></li>
+                    <li><a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">Scrape Any Website</a></li>
+                </ul>
+            </footer>
+            <!-- end of footer section -->
+        </main>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
