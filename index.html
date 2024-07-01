@@ -7,55 +7,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
+        <!-- header section -->
         <header>
-            <h1 data-testid="slackDisplayName">Keme</h1>
+            <h1>My Tech Goals for the Next 2 Years</h1>
+
         </header>
+        <!-- end of header section -->
+        
 
-        <main>
-            <!-- profile section -->
-            <section class="my-profile">
-                <img data-testid="slackprofilepicture" src="./image/profile-picture.jpeg" alt="slack profile picture">
-                <p data-testid="slackEmail">osikemelite42@gmail.com</p>
-            </section>
-            <!-- end of profile section -->
-
-
-            <!-- goals section -->
-            <section class="my-goals">
-                <h2>My Tech Goals for the Next 2 years</h2>
-                <ul>
-                    <li>To become a world class software developer</li>
-                    <li>To become a world class software developer</li>
-                    <li>To become a world class software developer</li>
-                </ul>
-            </section>
-            <!-- end of goals section -->
-
-
-            <!-- current time and day section -->
-            <section class="datetime">
+        <!-- profile section -->
+        <section>
+        <div class="my-profile">
+            <img src="./image/profile-picture.jpeg" alt="Slack Profile Picture" data-testid="slackProfilePicture" width="200" height="200">
+            <p data-testid="slackDisplayName">Keme</p>
+            <p data-testid="slackEmail">osikemelite42@gmail.com</p>
+        </div>
+    </section>
+    <!-- end of profile section -->
+     
+    <!-- current time and day section -->
+         <section >
+            <div class="datetime">
                 <p><strong>Current Time in UTC:</strong><span data-testid="currentTimeUTC" id="currentTimeUTC">--:--:--</span></p>
                 <p><strong>Current Day of the Week:</strong> <span data-testid="currentDay" id="currentDay">---</span></p>
+            </div>
+        </section>
+         <!-- end of current time and day section -->
 
-            </section>
-            <!-- end of current time and day section -->
+            <!-- goals section -->
+             <section class="goals">
+                 <div class="my-goals">
+                    <h2>My Tech Goals</h2>
+                    <ul>
+                    <li>
+                        <strong>Master Modern JavaScript (ES6+) and Frameworks</strong>
+                        <ul>
+                            <li>Gain a deep understanding of modern JavaScript (ES6 and beyond) features such as arrow functions, destructuring, promises, async/await, modules, etc.</li>
+                            <li>Master one or more popular frameworks/libraries like React, Vue.js, or Angular.</li>
+                            <li>Modern JavaScript and frameworks are essential for building efficient, maintainable, and scalable web applications.</li>
 
+                        </ul>
+                    </li>
 
-            <!-- footer section -->
-            <footer>
-                <p>Useful Links:</p>
-                <ul>
-                    <li><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a></li>
-                    <li><a href="https://keyword.dog" target="_blank" data-testid="keywordLink" >Keyword Dog</a></li>
-                    <li><a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">Scrape Any Website</a></li>
+                    <li>
+                        <strong>Build and Deploy Progressive Web Apps (PWAs)</strong>
+                        <ul>
+                            <li>Learn how to create Progressive Web Apps that are reliable, fast, and engaging.</li>
+                            <li>Understand service workers, web app manifests, and caching strategies.</li>
+                            <li>PWAs offer a better user experience, can work offline, and are installable, bridging the gap between web and native apps.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Improve User Experience (UX) and Accessibility Skills</strong>
+                        <ul>
+                            <li>Gain a deeper understanding of UX principles and best practices for web accessibility (a11y).</li>
+                            <li>Learn to conduct usability tests, understand ARIA roles, and use tools like Lighthouse for accessibility audits.</li>
+                            <li>Ensuring a website is user-friendly and accessible to all users, including those with disabilities, is critical for inclusivity and legal compliance.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Learn and Implement CSS-in-JS and Advanced CSS Techniques</strong>
+                        <ul>
+                            <li>Explore advanced CSS concepts and methodologies like CSS Grid, Flexbox, and CSS-in-JS solutions (e.g., styled-components, Emotion).</li>
+                            <li>Advanced CSS techniques and CSS-in-JS libraries help in creating more flexible, maintainable, and scalable styles for modern web applications.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Contribute to Open Source Projects and Build a Strong Portfolio</strong>
+                        <ul>
+                            <li>Actively contribute to open source projects related to front-end development.</li>
+                            <li>Build and maintain a personal portfolio showcasing your projects, contributions, and skills.</li>
+                            <li>Contributing to open source helps in gaining real-world experience, improving coding skills, networking with other developers, and building a strong professional presence.</li>
+                        </ul>
+                    </li>
+
                 </ul>
-            </footer>
-            <!-- end of footer section -->
-        </main>
+            </div>
+         </section>
+            <!-- end of goals section -->
+
+        <!-- footer section -->
+         <footer>
+            <div class="links">
+                <p>Useful Links:</p>
+                <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a>
+                <a href="https://keyword.dog" target="_blank" data-testid="keywordLink">Keyword Dog</a>
+                <a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">Scrape Any Web</a>
+            </div>
+         </footer>
+        <!-- end of footer section -->
+
     </div>
-    
 
     <script src="script.js"></script>
 </body>
